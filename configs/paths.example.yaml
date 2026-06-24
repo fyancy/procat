@@ -1,0 +1,16 @@
+# Copy this file to paths.yaml and edit paths for your machine.
+# Alternatively set TTA_DATA_ROOT to the parent folder that contains SQdata/, OUBdata/, etc.
+
+# SQ preprocessed numpy cache (required for experiments)
+sq_npy_resampled: "H:/Datasets/SQdata/numpy_data_resampled/sq_no_noise_resampled_for_att.npy"
+sq_npy_unresampled: "H:/Datasets/SQdata/numpy_data_unresampled/sq_data_raw_250302_ntu.npy"
+
+# Legacy per-class SQ npy layout (fallback builder only)
+sq_legacy_dir: "H:/Datasets/dataset_MDA/SQ"
+
+# Bogie numpy cache root (expects numpy_data/Bogie_rpm{1000,1500,2000}.npy)
+bogie_root: "H:/Datasets/转向架齿轮轴承"
+
+# OUB: provide numpy cache for eval; raw .mat only needed to rebuild cache
+oub_raw: "H:/Datasets/OUBdata/raw"
+oub_cache: "H:/Datasets/OUBdata/numpy_resampled"

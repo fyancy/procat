@@ -1,0 +1,14 @@
+{
+  "dataset": "bogie",
+  "model": "resnet18",
+  "protocol_primary": "online-batch",
+  "batch_size": 64,
+  "train_batch_size": 128,
+  "seed": 0,
+  "window_length": 2048,
+  "channel": 0,
+  "num_classes": 10,
+  "samples_per_class": 180,
+  "train_ratio": 0.8,
+  "entrypoint": "tta.bogie.run_bogie_full"
+}

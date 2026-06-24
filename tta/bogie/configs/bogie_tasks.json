@@ -1,0 +1,44 @@
+{
+  "T1": {
+    "sources": [0, 1],
+    "source_rpms": [1000, 1500],
+    "targets": [0, 1, 2],
+    "target_rpms": [1000, 1500, 2000],
+    "gamma": 100.0
+  },
+  "T2": {
+    "sources": [0, 2],
+    "source_rpms": [1000, 2000],
+    "targets": [0, 2, 1],
+    "target_rpms": [1000, 2000, 1500],
+    "gamma": 100.0
+  },
+  "T3": {
+    "sources": [1, 2],
+    "source_rpms": [1500, 2000],
+    "targets": [1, 2, 0],
+    "target_rpms": [1500, 2000, 1000],
+    "gamma": 100.0
+  },
+  "T4": {
+    "sources": [0, 1],
+    "source_rpms": [1000, 1500],
+    "targets": [0, 1, 2],
+    "target_rpms": [1000, 1500, 2000],
+    "gamma": 0.1
+  },
+  "T5": {
+    "sources": [0, 2],
+    "source_rpms": [1000, 2000],
+    "targets": [0, 2, 1],
+    "target_rpms": [1000, 2000, 1500],
+    "gamma": 0.1
+  },
+  "T6": {
+    "sources": [1, 2],
+    "source_rpms": [1500, 2000],
+    "targets": [1, 2, 0],
+    "target_rpms": [1500, 2000, 1000],
+    "gamma": 0.1
+  }
+}

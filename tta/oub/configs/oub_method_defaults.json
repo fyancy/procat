@@ -1,0 +1,30 @@
+{
+  "dataset": "oub",
+  "protocol_primary": "online-batch",
+  "batch_size": 64,
+  "train_batch_size": 128,
+  "seed": 0,
+  "window_length": 2048,
+  "overlap": 0,
+  "windows_per_trial": 976,
+  "train_trials": [
+    1,
+    2
+  ],
+  "val_trials": [
+    3
+  ],
+  "default_subset": "light_trial1",
+  "light_samples": 100,
+  "entrypoint": "tta.oub.run_oub_2048_full",
+  "deprecated_entrypoints": [
+    "datasets.oub.get_oub_data (overlap=0.65, train_ratio split)",
+    "tta.oub.evaluate_oub_tasks_deprecated",
+    "tta.oub.data_factory_deprecated",
+    "tta.oub.train_source_deprecated",
+    "tta.oub.tune_oub_proto_deprecated",
+    "tta.oub.tune_oub_proto_per_task_deprecated",
+    "tta.oub.compare_proto_logits_timing_deprecated",
+    "task_definitions.checkpoint_for_domain (clean_noaug checkpoints)"
+  ]
+}

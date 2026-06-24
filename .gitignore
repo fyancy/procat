@@ -1,0 +1,28 @@
+data/
+datasets/cache/
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+configs/paths.yaml
+
+# Runtime experiment outputs
+reference/
+tta/results/**/*.csv
+tta/results/**/*.md
+tta/results/**/*.txt
+tta/results/**/*.docx
+
+# Do not track user data artifacts
+*.npy
+*.mat
+*.h5
+
+# Track checkpoints; ignore other weight experiments
+checkpoints/*_legacy*
+checkpoints/*_ttt*
+checkpoints/*_supcon*
+checkpoints/*_ltta*
+
+proto_cache/

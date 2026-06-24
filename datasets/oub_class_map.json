@@ -1,0 +1,19 @@
+{
+  "raw_dir": "H:/Datasets/OUBdata/raw",
+  "num_mat_files": 60,
+  "num_mapped_files": 60,
+  "folder_labels": {
+    "1 Data collected from a healthy bearing": 0,
+    "2 Data collected from a bearing with inner race fault": 1,
+    "3 Data collected from a bearing with outer race fault": 2,
+    "4 Data collected from a bearing with ball fault": 3,
+    "5 Data collected from a bearing with a combination of faults": 4
+  },
+  "domain_codes": {
+    "A": 0,
+    "B": 1,
+    "C": 2,
+    "D": 3
+  },
+  "files": []
+}

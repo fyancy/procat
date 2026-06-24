@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "name": "tribe_config_official",
+    "source_repo": "https://github.com/Gorilla-Lab-SCUT/TRIBE",
+    "source_files": [
+      "configs/adapter/TRIBE.yaml",
+      "configs/dataset/cifar10.yaml"
+    ],
+    "note": "Official CIFAR-10 (K=10) defaults; Bogie also has 10 classes. ETA/GAMMA/H0/LAMBDA from TRIBE.yaml; LR/optimizer/batch from cifar10.yaml."
+  },
+  "tribe": {
+    "lr": 0.001,
+    "optimizer": "adam",
+    "weight_decay": 0.0,
+    "steps": 1,
+    "eta": 0.01,
+    "gamma": 0.0,
+    "h0": 0.05,
+    "lambda_reg": 0.5,
+    "adapt_params": "affine",
+    "gaussian_std": 0.005
+  }
+}

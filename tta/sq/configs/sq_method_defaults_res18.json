@@ -1,0 +1,13 @@
+{
+  "dataset": "sq",
+  "model": "resnet18",
+  "protocol_primary": "online-batch",
+  "batch_size": 64,
+  "seed": 0,
+  "train_ratio": 0.8,
+  "train_speeds": "0,1",
+  "domain_test_speeds": "2,3",
+  "corruption_speeds": "0,1",
+  "gli_gamma": 0.1,
+  "entrypoint": "tta.sq.run_sq_full"
+}
