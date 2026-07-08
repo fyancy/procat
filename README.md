@@ -100,8 +100,6 @@ into a calibrated pseudo-distribution (c), pulling the pseudo-label toward the t
 
 ## 📊 Results
 
-> In the figures below, `CTDA` = RoTTA, `TTDA` = CoTTA, and `Proposed` = **ProCAT**.
-
 **Reliability / confidence calibration.** ProCAT yields the best-calibrated predictions
 (lowest ECE / MCE), while several TTA baselines become more over-confident than the frozen source model.
 
@@ -167,16 +165,6 @@ python -m tta.bogie.run_bogie_full eval --tasks all --model tfn --device cuda
 # OUB light_trial1 — all 8 tasks
 python -m tta.oub.run_oub_2048_full eval --subset light_trial1 --tasks all --model tfn --device cuda
 ```
-
-## 📁 Data files (not included)
-
-| Dataset | Required preprocessed file(s) |
-|---|---|
-| SQ | `SQdata/numpy_data_resampled/sq_no_noise_resampled_for_att.npy` |
-| Bogie | `转向架齿轮轴承/numpy_data/Bogie_rpm{1000,1500,2000}.npy` |
-| OUB | `OUBdata/numpy_resampled/oub_len2048_nonoverlap_trialwise.npy` |
-
----
 
 ## 📖 Citation
 

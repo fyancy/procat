@@ -89,8 +89,6 @@ ProCAT 在教师–学生自适应框架的基础上引入了 **特征原型推�
 
 ## 📊 实验结果
 
-> 下图中，`CTDA` = RoTTA，`TTDA` = CoTTA，`Proposed` = **ProCAT**。
-
 **可靠性 / 置信度校准。** ProCAT 给出校准性最好的预测（最低的 ECE / MCE），
 而部分 TTA 基线甚至比冻结的源模型更加过度自信。
 
@@ -156,16 +154,6 @@ python -m tta.bogie.run_bogie_full eval --tasks all --model tfn --device cuda
 # OUB light_trial1 —— 全部 8 个任务
 python -m tta.oub.run_oub_2048_full eval --subset light_trial1 --tasks all --model tfn --device cuda
 ```
-
-## 📁 数据文件（未包含）
-
-| 数据集 | 所需的预处理文件 |
-|---|---|
-| SQ | `SQdata/numpy_data_resampled/sq_no_noise_resampled_for_att.npy` |
-| Bogie | `转向架齿轮轴承/numpy_data/Bogie_rpm{1000,1500,2000}.npy` |
-| OUB | `OUBdata/numpy_resampled/oub_len2048_nonoverlap_trialwise.npy` |
-
----
 
 ## 📖 引用
 
