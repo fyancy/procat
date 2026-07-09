@@ -114,12 +114,24 @@ cross-speed feature distributions into well-separated class clusters.
 <img src="assets/feature_tsne.png" width="95%" alt="t-SNE feature visualization"/>
 </div>
 
+**Online diagnosis on Bogie.** Cumulative accuracy along the online stream for six Bogie
+tasks ($T_1^{\mathrm{BG}}$–$T_6^{\mathrm{BG}}$, TFN). Each task is trained on two shaft
+speeds and tested under an unseen speed with varying label imbalance. ProCAT (thick black)
+stays above strong TTA baselines throughout the stream, with the largest margins after the
+unseen-speed segment enters.
+
+<div align="center">
+<img src="assets/bogie_online_curves.png" width="95%" alt="Bogie online cumulative accuracy curves"/>
+</div>
+
+<!-- Temporarily hidden until paper publication; restore when ready to showcase.
 **Pseudo-label quality.** The calibrated pseudo-labels track the ground-truth per-batch label
 distribution far more faithfully than teacher-only or prototype-only pseudo-labels, mitigating late-stream class collapse.
 
 <div align="center">
 <img src="assets/pseudo_label_quality.png" width="95%" alt="Pseudo-label distribution comparison"/>
 </div>
+-->
 
 ---
 
