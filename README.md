@@ -100,6 +100,16 @@ into a calibrated pseudo-distribution (c), pulling the pseudo-label toward the t
 
 ## 📊 Results
 
+**Online diagnosis on Bogie.** Cumulative accuracy along the online stream for six Bogie
+tasks (T<sub>1</sub><sup>BG</sup>–T<sub>6</sub><sup>BG</sup>, TFN). Each task is trained on two shaft
+speeds and tested under an unseen speed with varying label imbalance. ProCAT (thick black)
+stays above strong TTA baselines throughout the stream, with the largest margins after the
+unseen-speed segment enters.
+
+<div align="center">
+<img src="assets/bogie_online_curves.png" width="95%" alt="Bogie online cumulative accuracy curves"/>
+</div>
+
 **Reliability / confidence calibration.** ProCAT yields the best-calibrated predictions
 (lowest ECE / MCE), while several TTA baselines become more over-confident than the frozen source model.
 
@@ -112,16 +122,6 @@ cross-speed feature distributions into well-separated class clusters.
 
 <div align="center">
 <img src="assets/feature_tsne.png" width="95%" alt="t-SNE feature visualization"/>
-</div>
-
-**Online diagnosis on Bogie.** Cumulative accuracy along the online stream for six Bogie
-tasks ($T_1^{\mathrm{BG}}$–$T_6^{\mathrm{BG}}$, TFN). Each task is trained on two shaft
-speeds and tested under an unseen speed with varying label imbalance. ProCAT (thick black)
-stays above strong TTA baselines throughout the stream, with the largest margins after the
-unseen-speed segment enters.
-
-<div align="center">
-<img src="assets/bogie_online_curves.png" width="95%" alt="Bogie online cumulative accuracy curves"/>
 </div>
 
 <!-- Temporarily hidden until paper publication; restore when ready to showcase.

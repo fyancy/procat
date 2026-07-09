@@ -89,6 +89,15 @@ ProCAT 在教师–学生自适应框架的基础上引入了 **特征原型推�
 
 ## 📊 实验结果
 
+**Bogie 在线故障诊断。** 六个 Bogie 任务（T<sub>1</sub><sup>BG</sup>–T<sub>6</sub><sup>BG</sup>，TFN）
+上沿在线数据流的累计准确率曲线。每个任务在两种轴转速上预训练，并在未见转速与不同标签
+不均衡条件下测试。ProCAT（粗黑线）在整个数据流上持续优于强 TTA 基线，在未见转速段进入后
+优势尤为明显。
+
+<div align="center">
+<img src="assets/bogie_online_curves.png" width="95%" alt="Bogie 在线累计准确率曲线"/>
+</div>
+
 **可靠性 / 置信度校准。** ProCAT 给出校准性最好的预测（最低的 ECE / MCE），
 而部分 TTA 基线甚至比冻结的源模型更加过度自信。
 
@@ -101,15 +110,6 @@ ProCAT 在教师–学生自适应框架的基础上引入了 **特征原型推�
 
 <div align="center">
 <img src="assets/feature_tsne.png" width="95%" alt="t-SNE 特征可视化"/>
-</div>
-
-**Bogie 在线故障诊断。** 六个 Bogie 任务（$T_1^{\mathrm{BG}}$–$T_6^{\mathrm{BG}}$，TFN）
-上沿在线数据流的累计准确率曲线。每个任务在两种轴转速上预训练，并在未见转速与不同标签
-不均衡条件下测试。ProCAT（粗黑线）在整个数据流上持续优于强 TTA 基线，在未见转速段进入后
-优势尤为明显。
-
-<div align="center">
-<img src="assets/bogie_online_curves.png" width="95%" alt="Bogie 在线累计准确率曲线"/>
 </div>
 
 <!-- 论文发表前暂时隐藏；需要展示时取消注释即可。
